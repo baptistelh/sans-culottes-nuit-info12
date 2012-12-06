@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -31,7 +32,7 @@ public class Ville extends Model{
 	public long code_postal;
 	
 	@OneToMany(mappedBy="ville", cascade=CascadeType.ALL)
-	public List<Ville> commentaires;	
+	public List<Monument> monuments;	
 	
 	public String toString() {
 		return nom_ville;
@@ -43,6 +44,7 @@ public class Ville extends Model{
 		this.lat_ville = lat_ville;
 		this.long_ville = long_ville;
 		this.code_postal = code_postal;
+		this.monuments = new ArrayList<Monument>();
 	}
 	
 	public Ville(String nom_ville, float lat_ville, float long_ville, long code_postal){
