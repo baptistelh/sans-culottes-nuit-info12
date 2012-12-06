@@ -1,0 +1,94 @@
+# Test data
+
+Ville(paris):
+    nom_ville:     Paris
+    histo_ville:   TEST_PARIS
+    lat_ville:     48.8566140
+    long_ville:    2.3522219
+    code_postal:   75000
+
+Ville(lyon):
+    nom_ville:     Lyon
+    histo_ville:   TEST_LYON
+    lat_ville:     45.7640430
+    long_ville:    45.7640430
+    code_postal:   69000
+
+Ville(lille):
+    nom_ville:     Lille
+    histo_ville:   TEST_LILLE
+    lat_ville:     50.6292500
+    long_ville:    3.0572560
+    code_postal:   59000
+
+Monument(tourEiffel):
+    nom_mon:       Tour Eiffel
+    histo_mon:     >
+                   La tour Eiffel est une tour de fer puddlé de 324 mètres de hauteur
+                   (avec antennes) située à Paris, à l\'extrémité nord-ouest du parc du Champ-de-Mars 
+                   en bordure de la Seine.
+    lat_mon:       48.8582780
+    long_mon:      2.2942540
+    ville:         paris
+
+Monument(leLouvre):
+    nom_mon:       Le Louvre
+    histo_mon:     >
+                  Le musée du Louvre est l\'un des plus grands musées du monde et le plus
+                  grand musée de Paris par sa surface de 210 000 m2 dont 60 600 consacrés aux expositions.
+    lat_mon:       49.1463811
+    long_mon:      0.4594143
+    ville:         paris
+
+Monument(notreDame):
+    nom_mon:       Cathédrale Notre Dame
+    histo_mon:     >
+                   La cathédrale Notre-Dame de Paris, Notre-Dame de 
+                   Paris ou Notre-Dame est la cathédrale de l\'archidiocèse catholique de Paris. Elle est 
+                   située sur la moitié est de l\'île de la Cité, dans le quatrième arrondissement de Paris.
+    lat_mon:       48.8529682
+    long_mon:      2.3499021
+    ville:         paris
+
+Monument(arcTriomphe):
+    nom_mon:       Arc de triomphe
+    histo_mon:     >
+                   L\'arc de triomphe de l\'Étoile souvent appelé simplement l\'arc 
+                   de triomphe, construit de 1806 à 1836 sur ordre de Napoléon, est situé à Paris dans
+                   le 8e arrondissement, sur la place de l\'Étoile, à l\'extrémité ouest de l\'avenue des
+                   Champs-Élysées, à 2,2 kilomètres de la place de la Concorde.
+    lat_mon:       48.8738311
+    long_mon:      2.2950272
+    ville:         paris
+
+
+Monument(beauxArtsLyon):
+    nom_mon:       Musée des Beaux-Arts de Lyon
+    histo_mon:     >
+                   Le musée des Beaux-Arts de Lyon est situé en plein 
+                   coeur du centre ville historique, dans les bâtiments d\'une ancienne abbaye royale
+                   du 17ème siècle : l\'abbaye des Dames de Saint-Pierre.
+    lat_mon:       45.7671686
+    long_mon:      4.8335373
+    ville:         lyon
+
+
+Monument(gerland):
+    nom_mon:       Stade de Gerland
+    histo_mon:     >
+                   Le stade de Gerland est la principale enceinte sportive de la 
+                   ville de Lyon. Situé dans le 7e arrondissement, dans le quartier de Gerland, il est 
+                   actuellement utilisé par l\'Olympique lyonnais.
+    lat_mon:       45.7237774
+    long_mon:      4.8322814
+    ville:         lyon
+
+Monument(bourseLille):
+    nom_mon:       Vieille bourse
+    histo_mon:     >
+                   La Vieille Bourse de Lille, nommée ainsi depuis la construction 
+                   de la Chambre de Commerce et d\'Industrie dans les années 1910, est sans conteste 
+                   le monument le plus prestigieux de la ville.
+    lat_mon:       50.6369847
+    long_mon:      3.0636815
+    ville:         lille
