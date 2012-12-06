@@ -26,6 +26,13 @@ public class Monument extends Model {
     @Required
 	public Ville ville;
 	    
+	public Monument(Ville ville, String nom_mon, float lat_mon, float long_mon) {
+        this.ville = ville;
+        this.nom_mon = nom_mon;
+        this.lat_mon = lat_mon;
+        this.long_mon = long_mon;
+    }
+	
     public Monument(Ville ville, String nom_mon, String histo_mon, float lat_mon, float long_mon) {
         this.ville = ville;
         this.nom_mon = nom_mon;
