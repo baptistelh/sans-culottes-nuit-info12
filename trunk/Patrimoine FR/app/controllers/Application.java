@@ -9,6 +9,11 @@ import models.*;
 
 public class Application extends Controller {
     
+    public static void showMonument(Long id) {
+    	Monument monument = Monument.findById(id);
+    	render(monument);
+    }
+    
     public static void about() {
         render();
     }
