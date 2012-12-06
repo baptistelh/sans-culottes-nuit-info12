@@ -9,24 +9,26 @@ import models.*;
 
 public class Application extends Controller {
     
-    public static void showMonument(Long id) {
+	public static void showMonument(Long id) {
     	Monument monument = Monument.findById(id);
     	render(monument);
     }
-    
+	
     public static void about() {
         render();
     }
     
  	public static void index() {
  		
- 		List<Ville> villes = (List<Ville>)Cache.get("current"+session.getId());
+ 		/*List<Ville> villes = (List<Ville>)Cache.get("current"+session.getId());
  		if(villes == null){
  			villes = Ville.all().fetch();
  			Cache.set("current"+session.getId(), villes, "10mn");
- 		}
+ 		}*/
  		
- 		render(villes);
+ 		Ville ville = Ville.find("order by nom_ville desc").first();
+ 		
+ 		render(ville);
  	}
 
 }
