@@ -7,6 +7,8 @@ GET     /                                       Application.index
 GET     /Accueil                                Application.index
 GET     /Qui-sommes-nous                        Application.about
 
+GET		/monuments/{<[0-9]+>id}					Application.showMonument
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
