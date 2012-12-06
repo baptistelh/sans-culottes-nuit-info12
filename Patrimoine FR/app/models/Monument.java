@@ -24,7 +24,7 @@ public class Monument extends Model {
 	
 	@ManyToOne
     @Required
-	public int ville;
+	public Ville ville;
 	    
     public Monument(Ville ville, String nom_mon, String histo_mon, float lat_mon, float long_mon) {
         this.ville = ville;
