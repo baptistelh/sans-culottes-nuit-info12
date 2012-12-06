@@ -1,7 +1,91 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Accueil' /}
 
-Vive les Sans culottes (SDK V1.7.2)
+<!-- Carousel
+    ================================================== -->
+ <div id="myCarousel" class="carousel slide">
+   <div class="carousel-inner">
+     <div class="item active">
+       <img src="public/images/carrousel/carrousel1.jpg" alt="">
+       <div class="container">
+         <div class="carousel-caption">
+           <h1>Bienvenue sur Patrimoine-FR.appspot.com</h1>
+           <p class="lead">Ce site a &eacute;t&eacute; r&eacute;alis&eacute; tout sp&eacute;cialement pour la nuit de l'info 2012 ;)</p>
+           <a class="btn btn-large btn-primary" href="#">En savoir +</a>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <img src="public/images/carrousel/carrousel2.jpg" alt="">
+       <div class="container">
+         <div class="carousel-caption">
+           <h1>Nous avons cod&eacute; toute la nuit...</h1>
+           <p class="lead">...pour vous pr&eacute;senter ce site. Vous voulez en apprendre d'avantage sur notre &eacute;quipe ou les technologies utilis&eacute;s ?</p>
+           <a class="btn btn-large btn-primary" href="Qui-sommes-nous">C'est par ici !</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+ </div><!-- /.carousel -->
 
-<img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif"
-alt="Powered by Google App Engine" />
+
+
+ <!-- Marketing messaging and featurettes
+ ================================================== -->
+ <!-- Wrap the rest of the page in another container to center all the content. -->
+
+ <div class="container marketing">
+
+   <!-- Three columns of text below the carousel -->
+   <div class="row">
+     <div class="span4">
+       <img class="img-circle" src="http://placehold.it/140x140">
+       <h2>Heading</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+     </div><!-- /.span4 -->
+     <div class="span4">
+       <img class="img-circle" src="http://placehold.it/140x140">
+       <h2>Heading</h2>
+       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+     </div><!-- /.span4 -->
+     <div class="span4">
+       <img class="img-circle" src="http://placehold.it/140x140">
+       <h2>Heading</h2>
+       <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+     </div><!-- /.span4 -->
+   </div><!-- /.row -->
+   
+   <hr class="featurette-divider">
+   
+ <!-- Le javascript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+ <!-- 
+ <script src="../assets/js/bootstrap-transition.js"></script>
+ <script src="../assets/js/bootstrap-alert.js"></script>
+ <script src="../assets/js/bootstrap-modal.js"></script>
+ <script src="../assets/js/bootstrap-dropdown.js"></script>
+ <script src="../assets/js/bootstrap-scrollspy.js"></script>
+ <script src="../assets/js/bootstrap-tab.js"></script>
+ <script src="../assets/js/bootstrap-tooltip.js"></script>
+ <script src="../assets/js/bootstrap-popover.js"></script>
+ <script src="../assets/js/bootstrap-button.js"></script>
+ <script src="../assets/js/bootstrap-collapse.js"></script>
+ <script src="../assets/js/bootstrap-carousel.js"></script>
+ <script src="../assets/js/bootstrap-typeahead.js"></script>
+  -->
+ <script>
+   !function ($) {
+     $(function(){
+       // carousel demo
+       $('#myCarousel').carousel()
+     })
+   }(window.jQuery)
+ </script>
