@@ -40,5 +40,13 @@ public class Monument extends Model {
         this.lat_mon = lat_mon;
         this.long_mon = long_mon;
     }
+    
+    /*public Monument previous() {
+    	return Monument.find("", ).first();
+    }
+    
+    public Monument next() {
+    	return Monument.find("", ).first();
+    }*/
  
 }

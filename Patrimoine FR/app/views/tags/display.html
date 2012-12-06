@@ -1,0 +1,24 @@
+*{ Display a post in one of these modes: 'ville' or 'monument' }*
+ #{if _as == 'monument'}
+ 
+ 	<br />
+ 	<br />
+ 	<br />
+	<div class="monuments">
+	   <div class="monument-image">
+	   		<img src=@{'/public/images/monuments/'+_monument.id+'.png'}>
+	   </div>
+	   <h2 class="monument-nom">
+             ${_monument.nom_mon}
+       </h2>
+	   <h2 class="monument-ville">
+             ${_monument.ville.nom_ville}
+       </h2>
+	   <div class="historique">
+	       ${_monument.histo_mon.escape().nl2br()}
+	   </div>	
+	   <div>
+	   		${_monument.lat_mon} lat.- ${_monument.long_mon} long.
+	   </div>   
+	</div>
+ #{/if}
