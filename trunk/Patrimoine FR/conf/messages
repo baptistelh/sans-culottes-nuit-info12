@@ -1,3 +1,16 @@
 # You can specialize this file for each language.
 # For example, for French create a messages.fr file
 #
+
+nom_mon=Nom du monument
+histo_mon=Historique du monument
+img_path_mon=URL de l'image du monument
+ville=Ville
+lat_mon=Latitude du monument
+long_mon=Longitude du monument
+lat_ville=Latitude de la ville
+long_ville=Longitude de la ville
+nom_ville=Nom de la ville
+histo_ville=Historique de la ville
+code_postal=Code postal de la ville
+img_path_ville=URL de l'image de la ville
