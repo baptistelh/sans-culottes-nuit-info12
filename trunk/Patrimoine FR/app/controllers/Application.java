@@ -14,6 +14,11 @@ public class Application extends Controller {
     	render(monument);
     }
 	
+    public static void showVille(Long id) {
+    	Ville ville = Ville.findById(id);
+    	render(ville);
+    }
+    
     public static void about() {
         render();
     }

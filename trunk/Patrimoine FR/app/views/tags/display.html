@@ -17,11 +17,49 @@
              ${_monument.nom_mon}
        </h2>
 	   <h2 class="monument-ville">
-             ${_monument.ville.nom_ville}
+            <a href=@{Application.showVille(_monument.ville.id)}> ${_monument.ville.nom_ville}</a>
        </h2>
 	   <div class="historique">
 	       ${_monument.histo_mon.escape().nl2br()}
 	   </div>	
 	</div>
-	 <div id="monument-carte"></div> 
+	 <div id="carte"></div> 
  #{/if}
+  #{elseif _as == 'ville'}
+	 <script type="text/javascript">
+	    $(document).ready(function(){
+	    	initialize(${_ville.lat_ville},${_ville.long_ville});
+	    	/*$("#ville-form").children().eq(0).submit(function(){
+	    		var choice = $("#ville-select option:selected").val();
+	    		alert(choice);
+	    		
+	    	}*/
+	    });
+	 </script>
+ 	<br />
+ 	<br />
+ 	<br />
+	<div class="ville">
+	   <div class="ville-image">
+	   		<img src=@{'/public/images/villes/'+_ville.id+'.png'}>
+	   </div>
+	   <h2 class="ville-nom">
+             ${_ville.nom_ville}
+       </h2>
+	   <div class="historique">
+	       ${_ville.histo_ville.escape().nl2br()}
+	   </div>	
+	</div>
+	 <div id="carte"></div> 
+	 <div id="ville-form">
+	 	#{form @Application.showMonument()}
+		 	<select name="id">
+			 	#{list items:_ville.monuments, as:'monument'}
+			 		<option value = ${monument.id}>${monument.nom_mon}</option>
+				#{/list}
+			</select>
+			<input type="submit" value="Valider">
+	 	#{/form}
+	 </div>
+ #{/elseif}
+ 
