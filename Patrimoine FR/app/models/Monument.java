@@ -17,10 +17,10 @@ public class Monument extends Model {
 	public String histo_mon;
 	
 	@Required
-	public float lat_mon;
+	public double lat_mon;
 	
 	@Required
-	public float long_mon;
+	public double long_mon;
 	
 	@Required
 	@URL
@@ -30,7 +30,7 @@ public class Monument extends Model {
     @Required
 	public Ville ville;
 	    
-	public Monument(Ville ville, String nom_mon, float lat_mon, float long_mon, String img_path_mon) {
+	public Monument(Ville ville, String nom_mon, double lat_mon, double long_mon, String img_path_mon) {
         this.ville = ville;
         this.nom_mon = nom_mon;
         this.lat_mon = lat_mon;
@@ -38,7 +38,7 @@ public class Monument extends Model {
         this.img_path_mon = img_path_mon;
     }
 	
-    public Monument(Ville ville, String nom_mon, String histo_mon, float lat_mon, float long_mon, String img_path_mon) {
+    public Monument(Ville ville, String nom_mon, String histo_mon, double lat_mon, double long_mon, String img_path_mon) {
         this.ville = ville;
         this.nom_mon = nom_mon;
         this.histo_mon = histo_mon;

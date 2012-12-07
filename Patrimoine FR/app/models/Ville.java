@@ -24,10 +24,10 @@ public class Ville extends Model{
 	public String histo_ville;
 	
 	@Required
-	public float lat_ville;
+	public double lat_ville;
 	
 	@Required
-	public float long_ville;
+	public double long_ville;
 	
 	@Required
 	public long code_postal;
@@ -43,7 +43,7 @@ public class Ville extends Model{
 		return nom_ville;
 	}
 	
-	public Ville(String nom_ville, String histo_ville, float lat_ville, float long_ville, long code_postal, String img_path_ville){
+	public Ville(String nom_ville, String histo_ville, double lat_ville, double long_ville, long code_postal, String img_path_ville){
 		this.nom_ville = nom_ville;
 		this.histo_ville = histo_ville;
 		this.lat_ville = lat_ville;
@@ -53,7 +53,7 @@ public class Ville extends Model{
 		this.monuments = new ArrayList<Monument>();
 	}
 	
-	public Ville(String nom_ville, float lat_ville, float long_ville, long code_postal, String img_path_ville){
+	public Ville(String nom_ville, double lat_ville, double long_ville, long code_postal, String img_path_ville){
 		this(nom_ville, null, lat_ville, long_ville, code_postal, img_path_ville);
 	}
 }
