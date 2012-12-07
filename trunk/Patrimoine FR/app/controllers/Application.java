@@ -22,7 +22,8 @@ public class Application extends Controller {
     }
     
     public static void about() {
-        render();
+    	List<Ville> villes = Ville.find("order by nom_ville desc").fetch();
+        render(villes);
     }
     
  	public static void index() {
