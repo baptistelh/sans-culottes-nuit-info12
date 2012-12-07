@@ -1,6 +1,11 @@
+
 *{ Display a post in one of these modes: 'ville' or 'monument' }*
  #{if _as == 'monument'}
- 
+	 <script type="text/javascript">
+	    $(document).ready(function(){
+	    	initialize(${_monument.lat_mon},${_monument.long_mon});
+	    });
+	 </script>
  	<br />
  	<br />
  	<br />
@@ -17,8 +22,6 @@
 	   <div class="historique">
 	       ${_monument.histo_mon.escape().nl2br()}
 	   </div>	
-	   <div>
-	   		${_monument.lat_mon} lat.- ${_monument.long_mon} long.
-	   </div>   
 	</div>
+	 <div id="monument-carte"></div> 
  #{/if}
