@@ -8,18 +8,23 @@
 	    });
 	 </script>
 	<div class="monuments">
-	   <div class="monument-image">
+		<div style="margin-top:80px">
+	   <div style="float:right;width:600px">
+		   <h2 class="monument-nom">
+	             ${_monument.nom_mon}
+	       </h2>
+		   <h2 class="monument-ville">
+	            <a href=@{Application.showVille(_monument.ville.id)}> ${_monument.ville.nom_ville}</a>
+	       </h2>
+	       <div class="historique">
+	       		${_monument.histo_mon.escape().nl2br()}
+	   		</div>
+	   </div>
+	   </div>
+	   <div class="monument-image" style="margin:20px" >
 	   		<img src=${_monument.img_path_mon}>
 	   </div>
-	   <h2 class="monument-nom">
-             ${_monument.nom_mon}
-       </h2>
-	   <h2 class="monument-ville">
-            <a href=@{Application.showVille(_monument.ville.id)}> ${_monument.ville.nom_ville}</a>
-       </h2>
-	   <div class="historique">
-	       ${_monument.histo_mon.escape().nl2br()}
-	   </div>
+	   
 	   <div id="carte"></div>
 	</div>
  #{/if}
@@ -38,18 +43,15 @@
  	<br />
  	<br />
 	<div class="ville">
-	   <div class="ville-image">
-	   		<img src=${_ville.img_path_ville}>
-	   </div>
+	   
+	<div style="float:right; style="padding-right:100px">   
 	   <h2 class="ville-nom">
              ${_ville.nom_ville}
        </h2>
 	   <div class="historique">
 	       ${_ville.histo_ville.escape().nl2br()}
-	   </div>	
-	</div>
-	 
-	 <div id="ville-form">
+	   </div>
+	   <div id="ville-form">
 	 	#{form @Application.showMonument()}
 		 	<select name="id">
 			 	#{list items:_ville.monuments, as:'monument'}
@@ -57,8 +59,17 @@
 				#{/list}
 			</select>
 			<input type="submit" value="Valider">
-			<div id="carte"></div> 
 	 	#{/form}
 	 </div>
+	   </div>
+	   <div class="ville-image">
+	   		<img src=${_ville.img_path_ville}>
+	   </div>	
+	</div>
+	 
+	 <div style="float:right">
+	 
+	 </div>
+	 <div id="carte"></div> 
  #{/elseif}
- 
+ <hr class="featurette-divider" style="margin-top:400px">

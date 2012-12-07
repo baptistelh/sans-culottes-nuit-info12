@@ -15,7 +15,7 @@
 	    <style type="text/css">
 	      html { height: 100% }
 	      body { height: 100%; margin: 0; padding: 0 }
-	      #carte { height: 40%; width: 40%; position:static}
+	      #carte { height: 300px; width: 400px; position:absolute; margin:30px}
 	    </style>
 	    <script type="text/javascript"
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnzp5T8hGN5h9n6pGdf0GLrI25igEsWZ0&sensor=true">
@@ -309,9 +309,10 @@
 	            <ul class="nav">
 	              <li><a href=@{Application.index()}><i class="icon-home icon-white"></i> Accueil</a></li>
 	              <li><a href=@{Application.about()}><i class="icon-user icon-white"></i>Qui sommes nous</a></li>
-	              <li>Selectionnez une ville 
+	              <li>
 	              #{form @Application.showVille()}
-			        <select name="id">
+			        <select name="id" style="margin-top:10px">
+			        	<option value = 1>Selectionnez une ville</option> 
 					 	#{list items:villes, as:'ville'}
 					 		<option value = ${ville.id}>${ville.nom_ville}</option>
 						#{/list}
@@ -319,7 +320,7 @@
 					<input type="submit" value="Valider">
 			 	#{/form}
 	              </li>
-	               <li><a href=@{Admin.index()}><i class="icon-user icon-white"></i>Partie Admin</a></li>
+	               <li class=".pull-right"><a href=@{Admin.index()}><i class="icon-user icon-white"></i>Partie Admin</a></li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
 	        </div><!-- /.navbar-inner -->
