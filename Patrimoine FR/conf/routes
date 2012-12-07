@@ -7,9 +7,9 @@ GET     /                                       Application.index
 GET     /Accueil                                Application.index
 GET     /Qui-sommes-nous                        Application.about
 
-GET		/monuments/{<[0-9]+>id}					Application.showMonument
-POST	/monuments/{<[0-9]+>id}					Application.showMonument
-GET		/villes/{<[0-9]+>id}					Application.showVille
+GET		/Monuments/{<[0-9]+>id}					Application.showMonument
+POST	/Monuments/{<[0-9]+>id}					Application.showMonument
+GET		/Villes/{<[0-9]+>id}					Application.showVille
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
