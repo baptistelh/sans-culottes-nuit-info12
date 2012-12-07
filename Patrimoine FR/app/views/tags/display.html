@@ -1,5 +1,6 @@
 
 *{ Display a post in one of these modes: 'ville' or 'monument' }*
+<div class="container marketing">
  #{if _as == 'monument'}
 	 <script type="text/javascript">
 	    $(document).ready(function(){
@@ -18,9 +19,9 @@
        </h2>
 	   <div class="historique">
 	       ${_monument.histo_mon.escape().nl2br()}
-	   </div>	
+	   </div>
+	   <div id="carte"></div>
 	</div>
-	 <div id="carte"></div> 
  #{/if}
   #{elseif _as == 'ville'}
 	 <script type="text/javascript">
@@ -47,7 +48,7 @@
 	       ${_ville.histo_ville.escape().nl2br()}
 	   </div>	
 	</div>
-	 <div id="carte"></div> 
+	 
 	 <div id="ville-form">
 	 	#{form @Application.showMonument()}
 		 	<select name="id">
@@ -56,6 +57,7 @@
 				#{/list}
 			</select>
 			<input type="submit" value="Valider">
+			<div id="carte"></div> 
 	 	#{/form}
 	 </div>
  #{/elseif}
