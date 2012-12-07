@@ -1,7 +1,7 @@
 package controllers;
 
-import play.mvc.Controller;
-import play.mvc.With;
+import play.*;
+import play.mvc.*;
 
 @With(Secure.class)
 public class Admin extends Controller {
