@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>#{get 'title' /}</title>
-        <meta charset="iso-8859-15">
+        <meta charset="iso-8859-1">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
@@ -15,7 +15,7 @@
 	    <style type="text/css">
 	      html { height: 100% }
 	      body { height: 100%; margin: 0; padding: 0 }
-	      #carte { height: 40%; width: 40%  }
+	      #carte { height: 40%; width: 40%; position:static}
 	    </style>
 	    <script type="text/javascript"
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnzp5T8hGN5h9n6pGdf0GLrI25igEsWZ0&sensor=true">
@@ -317,7 +317,7 @@
 						#{/list}
 					</select>
 					<input type="submit" value="Valider">
-			 	#{/form}	              
+			 	#{/form}
 	              </li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
@@ -325,14 +325,13 @@
 	      </div><!-- /.navbar -->
 	
 	    </div><!-- /.container -->
-	    <br />
+        <br />
         #{doLayout /}
         <br />
          <!-- FOOTER -->
 	   <footer>
 	     <p class="pull-right">
 	     	<img src="http://www.playframework.org/assets/images/logo-footer.png" style="height:30px;" />
-	     	<img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" />
 	     	<a href="#">Haut de la page</a>
 	     </p>
 	     <p>
