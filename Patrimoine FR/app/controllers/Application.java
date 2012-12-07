@@ -10,13 +10,15 @@ import models.*;
 public class Application extends Controller {
     
 	public static void showMonument(Long id) {
+		List<Ville> villes = Ville.find("order by nom_ville desc").fetch();
     	Monument monument = Monument.findById(id);
-    	render(monument);
+    	render(monument, villes);
     }
 	
     public static void showVille(Long id) {
+    	List<Ville> villes = Ville.find("order by nom_ville desc").fetch();
     	Ville ville = Ville.findById(id);
-    	render(ville);
+    	render(ville, villes);
     }
     
     public static void about() {
@@ -31,9 +33,8 @@ public class Application extends Controller {
  			Cache.set("current"+session.getId(), villes, "10mn");
  		}*/
  		
- 		Ville ville = Ville.find("order by nom_ville desc").first();
- 		
- 		render(ville);
+ 		List<Ville> villes = Ville.find("order by nom_ville desc").fetch();
+ 		render(villes);
  	}
 
 }

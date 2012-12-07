@@ -309,7 +309,15 @@
 	            <ul class="nav">
 	              <li><a href=@{Application.index()}><i class="icon-home icon-white"></i> Accueil</a></li>
 	              <li><a href=@{Application.about()}><i class="icon-user icon-white"></i>Qui sommes nous</a></li>
-	              
+	              <li>Selectionnez une ville 
+	              #{form @Application.showVille()}
+			        <select name="id">
+					 	#{list items:villes, as:'ville'}
+					 		<option value = ${ville.id}>${ville.nom_ville}</option>
+						#{/list}
+					</select>
+					<input type="submit" value="Valider">
+			 	#{/form}	              
 	              </li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
