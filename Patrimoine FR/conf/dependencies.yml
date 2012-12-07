@@ -2,5 +2,9 @@
 
 require:
     - play
+<<<<<<< .mine
+    - play -> crud
+=======
     - play -> crud
 
+>>>>>>> .r33
