@@ -6,13 +6,15 @@ Ville(paris):
     lat_ville:     48.8566140
     long_ville:    2.3522219
     code_postal:   75000
-
+    img_path_ville: http://blogdemissbavarde.files.wordpress.com/2011/04/paris-2.jpg
+    
 Ville(lyon):
     nom_ville:     Lyon
     histo_ville:   TEST_LYON
     lat_ville:     45.7640430
-    long_ville:    45.7640430
+    long_ville:    4.8356590
     code_postal:   69000
+    img_path_ville: http://studio-patintaque-lyon.wifeo.com/images/d/den/de-nuit.jpg
 
 Ville(lille):
     nom_ville:     Lille
@@ -20,6 +22,7 @@ Ville(lille):
     lat_ville:     50.6292500
     long_ville:    3.0572560
     code_postal:   59000
+    img_path_ville: http://blog.comptoir-religieux.fr/wp-content/uploads/2012/10/marche-noel-lille.jpg
 
 Monument(tourEiffel):
     nom_mon:       Tour Eiffel
@@ -30,6 +33,7 @@ Monument(tourEiffel):
     lat_mon:       48.8582780
     long_mon:      2.2942540
     ville:         paris
+    img_path_mon:  http://www.ideesdeparents.com/wp-content/uploads/2008/07/tour-eiffel.jpg
 
 Monument(leLouvre):
     nom_mon:       Le Louvre
@@ -39,6 +43,7 @@ Monument(leLouvre):
     lat_mon:       49.1463811
     long_mon:      0.4594143
     ville:         paris
+    img_path_mon:  http://s1.e-monsite.com/2009/01/30/01/40218840pt35524-jpg.jpg
 
 Monument(notreDame):
     nom_mon:       Cathédrale Notre Dame
@@ -49,6 +54,7 @@ Monument(notreDame):
     lat_mon:       48.8529682
     long_mon:      2.3499021
     ville:         paris
+    img_path_mon:  http://www.schola-sainte-cecile.com/wp-content/2008/04/notre_dame_paris.jpg
 
 Monument(arcTriomphe):
     nom_mon:       Arc de triomphe
@@ -60,6 +66,7 @@ Monument(arcTriomphe):
     lat_mon:       48.8738311
     long_mon:      2.2950272
     ville:         paris
+    img_path_mon:   http://3.bp.blogspot.com/-07mkl_JnIw4/TZM9AkMiBQI/AAAAAAAAAAU/OgQKEeodEcU/s1600/ArcDeTriompheNightSmall.jpg
 
 
 Monument(beauxArtsLyon):
@@ -71,7 +78,7 @@ Monument(beauxArtsLyon):
     lat_mon:       45.7671686
     long_mon:      4.8335373
     ville:         lyon
-
+    img_path_mon:  http://www.cybevasion.fr/photos2/lyon-musee-des-beaux-arts-1.jpg
 
 Monument(gerland):
     nom_mon:       Stade de Gerland
@@ -82,6 +89,7 @@ Monument(gerland):
     lat_mon:       45.7237774
     long_mon:      4.8322814
     ville:         lyon
+    img_path_mon:  http://www.touslesstades.fr/wp-content/uploads/2007/09/gerland_exterieur.jpg
 
 Monument(bourseLille):
     nom_mon:       Vieille bourse
@@ -92,3 +100,4 @@ Monument(bourseLille):
     lat_mon:       50.6369847
     long_mon:      3.0636815
     ville:         lille
+    img_path_mon:  http://thomas.petit.gr.free.fr/Images/Lille/visite/vieille%20bourse.jpg
