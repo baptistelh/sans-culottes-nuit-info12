@@ -23,6 +23,7 @@ public class Monument extends Model {
 	public float long_mon;
 	
 	@Required
+	@URL
 	public String img_path_mon;
 	
 	@ManyToOne
@@ -46,6 +47,9 @@ public class Monument extends Model {
         this.img_path_mon = img_path_mon;
     }
     
+    public String toString() {
+    	return this.nom_mon + "-" + this.ville.nom_ville;
+    }
     /*public Monument previous() {
     	return Monument.find("", ).first();
     }

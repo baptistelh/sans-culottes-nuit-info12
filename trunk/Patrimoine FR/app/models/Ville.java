@@ -10,6 +10,7 @@ import javax.persistence.OneToMany;
 
 import play.data.validation.MaxSize;
 import play.data.validation.Required;
+import play.data.validation.URL;
 import play.db.jpa.Model;
 
 @Entity
@@ -32,6 +33,7 @@ public class Ville extends Model{
 	public long code_postal;
 	
 	@Required
+	@URL
 	public String img_path_ville;
 	
 	@OneToMany(mappedBy="ville", cascade=CascadeType.ALL)
